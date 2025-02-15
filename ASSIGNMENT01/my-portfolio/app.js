@@ -8,7 +8,7 @@ var logger = require('morgan');
 var hbs = require('hbs'); 
 //
 
-var indexRouter = require('./controllers/index');
+var indexRouter = require('./Routers/routes/index');
 var usersRouter = require('./Routers/routes/users');
 
 var app = express();
