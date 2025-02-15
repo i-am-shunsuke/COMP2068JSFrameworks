@@ -4,10 +4,20 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+//add this
+var hbs = require('hbs'); 
+//
+
 var indexRouter = require('./controllers/index');
 var usersRouter = require('./Routers/routes/users');
 
 var app = express();
+
+//hbs
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'hbs');
+hbs.registerPartials(path.join(__dirname, 'views', 'partials'));
+//
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
