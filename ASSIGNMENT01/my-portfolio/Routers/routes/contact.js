@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     const { name, email, message } = req.body;
     console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
-    res.send('Thank you for contacting me!');
+    res.send('Thank you for contacting me! Give me time');
 });
 
 module.exports = router;
