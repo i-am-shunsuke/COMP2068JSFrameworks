@@ -3,40 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the external CSS file for styling the page -->
     <link rel="stylesheet" href="/stylesheets/contactStyle.css">
-    <title>Contact Me</title>
-
+    <title>Contact Me</title> <!-- Title of the webpage -->
 </head>
 <body>
+    <!-- Subtitle section for the page -->
     <div class="subtitle">
-        <h2>Contact Me</h2> 
+        <h2>Contact Me</h2> <!-- Heading for the contact section -->
     </div>
 
-
+    <!-- Section containing contact details and form -->
     <section id="sep">
         <div class="profile">
+            <!-- Profile picture section -->
             <div class="myface">
-                <img src="/images/profile.png" alt="myface" class="selfphoto">
+                <img src="/images/profile.png" alt="myface" class="selfphoto"> <!-- Profile image -->
             </div>
             <article class="description">
                 <p>
                     This is my email<br>
+                    <!-- Email link to send an email directly -->
                     <a href="mailto:hirashun1224@gmail.com">hirashun1224@gmail.com</a> 
                 </p>
             </article>
         </div>
+        
+        <!-- Contact form section -->
         <div class="contact-form">
-            <h3>Send me a message</h3>
-            <form action="/contact" method="POST">
+            <h3>Send me a message</h3> <!-- Heading for the form -->
+            <form action="/contact" method="POST"> <!-- Form action to send the data to "/contact" -->
+                <!-- Name input field -->
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required> <!-- Name input field, required -->
 
+                <!-- Email input field -->
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required> <!-- Email input field, required -->
 
+                <!-- Message input field -->
                 <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message" required></textarea> <!-- Message input field, required -->
 
+                <!-- Submit button -->
                 <button type="submit">Send</button>
             </form>
         </div>

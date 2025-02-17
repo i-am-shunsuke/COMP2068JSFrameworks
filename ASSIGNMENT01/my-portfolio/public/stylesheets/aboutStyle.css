@@ -1,7 +1,7 @@
 html{
     font-size: 100%; /* 16px */
 }
-
+/* Subtitle section styling */
 .subtitle{
     text-align: center;
     font-size: 1.3rem;
@@ -11,27 +11,33 @@ html{
     text-shadow: 1px 1px 1px #24292e;
     padding: 25px 0;
 }
+/* Profile section in the introduction */
 #introduction .profile{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 50px 0;
 }
+/* My face section within the profile */
 #introduction .profile .myface{
     margin: 0 15px;
 }
+/* Styling for the profile image (self-photo) */
 #introduction .profile .myface .selfphoto{
     width: 250px;
     height: 250px;
     border-radius: 100%;
     object-fit: cover;
 }
+/* Description section of the profile */
 #introduction .profile .description{
     margin-left: 15px;
 }
+/* Heading style for the description section */
 #introduction .profile .description h2{
     margin-bottom: 5px;
 }
+/* Paragraph styling for the description */
 #introduction .profile .description p{
     margin: 10px 0;
     line-height: 30px;

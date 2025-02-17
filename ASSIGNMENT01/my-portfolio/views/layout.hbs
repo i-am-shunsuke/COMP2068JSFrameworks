@@ -3,37 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
+    <!-- Title of the webpage, dynamically set by the template engine -->
+    <title>{{title}}</title> 
+    <!-- Link to the custom CSS file for styling the page -->
     <link rel="stylesheet" href="/stylesheets/style.css">
+    <!-- Link to Bootstrap CSS for responsive design and pre-built styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
 </head>
 <body>
+    <!-- Navigation bar with links to different sections of the portfolio -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/">My Portfolio</a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="/about">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="/contact">Contact Me</a></li>
-            </ul>
+        <div class="container-fluid">
+            <!-- Navbar brand linking to the home page -->
+            <a class="navbar-brand" href="/">My Portfolio</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <!-- Navbar links for navigation -->
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact Me</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
     </nav>
 
+    <!-- Main content container where dynamic content will be inserted -->
     <div class="container">
-        {{{body}}}
+        {{{body}}} <!-- This placeholder is for dynamic content inserted by a template engine -->
     </div>
-   <footer class="text-center mt-5">
+    
+    <!-- Footer section with copyright and links to GitHub and LinkedIn -->
+    <footer class="text-center mt-5">
         <p>&copy; 2025 My Portfolio</p>
+        <!-- Link to GitHub project -->
         <a href="https://github.com/i-am-shunsuke/COMP2068JSFrameworks/tree/main/ASSIGNMENT01/my-portfolio" target="_blank">GitHub</a> | 
+        <!-- Link to LinkedIn profile -->
         <a href="https://www.linkedin.com/in/shunsuke-hirao-453a56230/" target="_blank">LinkedIn</a>
     </footer>
 
-
+    <!-- Script to include Bootstrap's JavaScript for functionality like collapsible navbar -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
     </script>

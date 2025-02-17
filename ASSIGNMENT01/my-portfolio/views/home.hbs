@@ -3,51 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-
-    <style>
-        
-        body{
-            margin: 0;
-            padding: 0;
-        }
-        .container{
-            max-width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        .mt-5{
-            margin-top: 0px !important;
-        }
-        #home{
-            position: relative;
-            width: 100%;
-            height: 500px;
-        }
-        #home p {
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            width: 700px;
-            margin: 0 auto;
-            font-size: 3rem;
-            font-weight: 800;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        #home picture img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
+    <!-- Link to the external CSS file for styling the page -->
+    <link rel="stylesheet" href="/stylesheets/homeStyle.css">
+    <title>home</title> <!-- Title of the webpage -->
 </head>
 <body>
+    <!-- Home section containing welcome message and image -->
     <section id="home">
-        <p>Welcome to my Portfolio</p>
+        <p>Welcome to my Portfolio</p> <!-- Welcome message for the portfolio page -->
         <picture>
-            <img src="/images/home.jpg" alt="myFace">
+            <!-- Displaying an image of the user (e.g., profile picture or something related) -->
+            <img src="/images/home.jpg" alt="myFace"> <!-- Image of the user with the alt text for accessibility -->
         </picture>
     </section>
 </body>

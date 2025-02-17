@@ -1,3 +1,4 @@
+/* Subtitle styling */
 .subtitle{
     text-align: center;
     font-size: 1.3rem;
@@ -7,37 +8,53 @@
     text-shadow: 1px 1px 1px #24292e;
     padding: 25px 0;
 }
+
+/* Project section 1 styling */
 #project .project1{
     display: flex;
     justify-content: center;
     margin: 0 auto;
 }
+
+/* Project 1 link styling */
 #project .project1 a{
     margin-left: 20px;
 }
+
+/* Project section 2 styling */
 #project .project2{
     display: flex;
     justify-content: center;
     margin-top: 40px;
 }
+
+/* Project 2 link styling */
 #project .project2 a{
     margin-left: 20px;
 }
+
+/* Project section 3 styling */
 #project .project3{
     display: flex;
     justify-content: center;
     margin-top: 40px;
     margin-bottom: 10px;
 }
+
+/* Project 3 link styling */
 #project .project3 a{
     margin-left: 20px;
 }
+
+/* Project section 4 styling */
 #project .project4{
     display: flex;
     justify-content: center;
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
+/* Project 4 link styling */
 #project .project4 a{
     margin-left: 20px;
 }

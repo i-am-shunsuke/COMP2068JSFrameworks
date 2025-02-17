@@ -1,3 +1,4 @@
+/* Subtitle section styling */
 .subtitle{
     text-align: center;
     font-size: 1.3rem;
@@ -8,21 +9,20 @@
     padding: 25px 0;
 }
 
-
+/* Section for separating profile and contact form */
 #sep{
     display: flex;
     justify-content: space-around;
 }
-/* .profile{
-    margin: 0 50px 0 auto;
-} */
+
+/* Profile section's appearance for the photo */
 .profile .myface{
     width: 300px;
     height: 300px;
     padding: 0;
-    
 }
 
+/* Image styling inside the profile section */
 .profile .myface img{
     width: 100%;
     height: 100%;
@@ -30,11 +30,13 @@
     object-fit: cover;
 }
 
+/* Description styling for the profile */
 .description{
     text-align: center;
     font-size: 1.5rem;
 }
 
+/* Contact form container styling */
 .contact-form {
     max-width: 500px;
     padding: 15px 35px;
@@ -44,17 +46,20 @@
     text-align: center;
 }
 
+/* Heading inside the contact form */
 .contact-form h3 {
     margin-bottom: 15px;
     font-size: 1.5rem;
 }
 
+/* Label styling inside the contact form */
 .contact-form label {
     display: block;
     margin: 10px 0 5px;
     font-weight: bold;
 }
 
+/* Input and textarea styles inside the contact form */
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -63,11 +68,13 @@
     border-radius: 5px;
 }
 
+/* Textarea specific styling inside the contact form */
 .contact-form textarea {
     height: 100px;
     resize: none;
 }
 
+/* Button styling inside the contact form */
 .contact-form button {
     margin-top: 15px;
     padding: 10px 20px;
@@ -78,6 +85,7 @@
     cursor: pointer;
 }
 
+/* Button hover effect */
 .contact-form button:hover {
     background-color: #DDDDDD;
 }

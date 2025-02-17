@@ -4,25 +4,30 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
+/* HTML font size */
 html{
   font-size: 100%; /* 16px */
 }
+
+/* Body styling for color and background */
 body{
   color: #24292e;
   background: #fffff0;
 }
 
+/* Custom background for elements */
 .bg-custom {
   background-color: #d2b48c;
   height: 100px;
 }
 
-
-
+/* Link color */
 a {
   color: #00B7FF;
 }
 
+/* Footer styling */
 footer{
   background: #d2b48c;
   padding: 15px 0;
