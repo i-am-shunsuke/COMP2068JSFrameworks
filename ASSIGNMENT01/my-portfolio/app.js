@@ -11,6 +11,9 @@ var hbs = require('hbs');
 var indexRouter = require('./Routers/routes/index');
 var usersRouter = require('./Routers/routes/users');
 
+//
+var contactRouter = require('./Routers/routes/contact');
+
 var app = express();
 
 //hbs
@@ -31,6 +34,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+//
+app.use('/contact', contactRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
