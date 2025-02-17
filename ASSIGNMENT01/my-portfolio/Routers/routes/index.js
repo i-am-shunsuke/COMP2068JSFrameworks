@@ -21,4 +21,20 @@ router.get("/contact", (req, res) => {
   res.render("contact", { title: "Contact Me" });
 });
 
+
+router.get('/contact', (req, res) => {
+  res.render('contact');
+});
+
+router.post('/contact', (req, res) => {
+  const { name, email, message } = req.body;
+  console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+  res.send('Thank you for contacting me! Give me time');
+});
+
+
+/* GET users listing. */
+router.get('/users', function(req, res, next) {
+  res.send('respond with a resource');
+});
 module.exports = router;

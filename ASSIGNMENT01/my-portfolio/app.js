@@ -9,17 +9,17 @@ var hbs = require('hbs');
 //
 
 var indexRouter = require('./Routers/routes/index');
-var usersRouter = require('./Routers/routes/users');
+// var usersRouter = require('./Routers/routes/users');
 
 //
-var contactRouter = require('./Routers/routes/contact');
+// var contactRouter = require('./Routers/routes/contact');
 
 var app = express();
 
 //hbs
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
-hbs.registerPartials(path.join(__dirname, 'views', 'partials'));
+// hbs.registerPartials(path.join(__dirname, 'views', 'partials'));
 //
 
 // view engine setup
@@ -33,10 +33,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+// app.use('/users', usersRouter);
 
 //
-app.use('/contact', contactRouter);
+// app.use('/contact', contactRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
