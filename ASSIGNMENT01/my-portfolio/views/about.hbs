@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        html{
+            font-size: 100%; /* 16px */
+        }
+
+        .subtitle{
+            text-align: center;
+            font-size: 1.3rem;
+            margin: 25px 0;
+            background: #DDDDDD;
+            color: white;
+            text-shadow: 1px 1px 1px #24292e;
+            padding: 25px 0;
+        }
+        #introduction .profile{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0;
+        }
+        #introduction .profile .myface{
+            margin: 0 15px;
+        }
+        #introduction .profile .myface .selfphoto{
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+            object-fit: cover;
+        }
+        #introduction .profile .description{
+            margin-left: 15px;
+        }
+        #introduction .profile .description h2{
+            margin-bottom: 5px;
+        }
+        #introduction .profile .description p{
+            margin: 10px 0;
+            line-height: 30px;
+            font-size: 1.2rem
+        }
+    </style>
+</head>
+<body>
+    <section id="introduction">
+        <div class="subtitle">
+           <h2>About Me</h2> 
+        </div>
+        
+        <div class="profile">
+            <div class="myface">
+                <img src="/images/profile.png" alt="myface" class="selfphoto">
+            </div>
+            <article class="description">
+                <h2>Shunsuke Hirao</h2>
+                <hr>
+                <p>
+                    Hello, my name is Shunsuke Hirao. I have a strong passion for software developer.<br>
+                    I took a computer course when I was a Bachelor of Arts student at Kyoto University of Foreign Studies.<br>
+                    Now I'm a student who takes computer science in Georgian College while working 
+                    as freelance web developer. <br>
+                </p>
+            </article>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,8 +1,29 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
+html{
+  font-size: 100%; /* 16px */
+}
+body{
+  color: #24292e;
+  background: #fffff0;
+}
+
+.bg-custom {
+  background-color: #d2b48c;
+  height: 100px;
+}
+
+
 
 a {
   color: #00B7FF;
+}
+
+footer{
+  background: #d2b48c;
+  padding: 15px 0;
 }

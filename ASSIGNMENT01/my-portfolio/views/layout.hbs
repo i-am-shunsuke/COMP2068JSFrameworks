@@ -8,9 +8,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <style>
+        body{
+            color: #24292e;
+            background: #fffff0;
+        }
+        
+    </style>
+
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">My Portfolio</a>
         <div class="collapse navbar-collapse">
@@ -24,18 +32,17 @@
     </div>
     </nav>
 
-    <div class="mt-4 p-5 bg-primary text-white rounded">
-        <h1>Jumbotron Example</h1>
-        <p>Lorem ipsum...</p>
-    </div>
+    {{!-- <div class="mt-4 p-5 bg-primary text-white rounded">
+        <h1>Welcome to my portfolio site</h1>
+    </div> --}}
 
     <div class="container">
         {{{body}}}
     </div>
    <footer class="text-center mt-5">
         <p>&copy; 2025 My Portfolio</p>
-        <a href="https://github.com/yourusername">GitHub</a> | 
-        <a href="https://www.linkedin.com/in/yourusername/">LinkedIn</a>
+        <a href="https://github.com/i-am-shunsuke/COMP2068JSFrameworks/tree/main/ASSIGNMENT01/my-portfolio" target="_blank">GitHub</a> | 
+        <a href="https://www.linkedin.com/in/shunsuke-hirao-453a56230/" target="_blank">LinkedIn</a>
     </footer>
 
 
