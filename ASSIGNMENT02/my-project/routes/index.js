@@ -5,7 +5,7 @@ const passport=require("passport");
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-    res.render("index", { title: "Express", user: req.user });
+    res.render("index", { title: "My Project", user: req.user });
   });
 
 // GET /login

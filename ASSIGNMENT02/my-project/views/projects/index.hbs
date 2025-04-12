@@ -1,9 +1,21 @@
-<h1>{{title}}</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/stylesheets/proIndex.css">
+</head>
+<body>
+    
+</body>
+</html>
+<h1 class="proIndexTitle">{{title}}</h1>
 {{!-- CRUD Functionality --}}
 {{!-- CREATE button --}}
 {{! Only show CRUD buttons if there's a session (authenticated user) }}
 {{#if user}}
-  <a href="/projects/add">Add a new project</a>
+  <a href="/projects/add">Add a new calory</a>
 {{/if}}
 {{!-- READ Show Table to view all projects in db --}}
 <table>

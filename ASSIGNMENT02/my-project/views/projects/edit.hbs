@@ -1,24 +1,35 @@
-<h1>
-  {{title}}
-</h1>
-<form method="POST">
-  {{! Input names have to match the name of the fields in the mongo schema object }}
-  {{! Mapping is not automatic, but it's best practices }}
-  <fieldset>
-    <label for="day" class="col-2">
-      Day:
-    </label>
-    <input name="day" id="day" required type="date" />
-  </fieldset>
-  <fieldset>
-    <label for="calory" class="col-2">
-      Calory:
-    </label>
-    <input name="calory" id="calory" required type="number" />
-  </fieldset>
-  {{! No need to specify Status since it has a default value }}
-  {{! Button needs to be inside <form> element to trigger POST }}
-  <button class="offset-3 btn btn-primary">
-    Save
-  </button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/stylesheets/proEdit.css">
+</head>
+<body>
+    <h1 class="proEditTitle">
+        {{title}}
+    </h1>
+    <form method="POST">
+        {{! Input names have to match the name of the fields in the mongo schema object }}
+        {{! Mapping is not automatic, but it's best practices }}
+        <fieldset>
+            <label for="day" class="col-2">
+            Day:
+            </label>
+            <input name="day" id="day" required type="date" />
+        </fieldset>
+        <fieldset>
+            <label for="calory" class="col-2">
+            Calory:
+            </label>
+            <input name="calory" id="calory" required type="number" />
+        </fieldset>
+        {{! No need to specify Status since it has a default value }}
+        {{! Button needs to be inside <form> element to trigger POST }}
+        <button class="offset-0 btn btn-primary">
+            Save
+        </button>
+    </form>
+</body>
+</html>

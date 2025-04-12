@@ -1,0 +1,77 @@
+
+  
+/* Title */
+.proAddTitle {
+    text-align: center;
+    color: #2c3e50;
+    margin: 40px 0;
+}
+  
+/* Form styling */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+  
+/* Fieldsets */
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+  
+/* Labels */
+label {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+  
+/* Inputs */
+input[type="date"],
+input[type="number"] {
+    padding: 10px 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border 0.2s;
+}
+  
+input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+  
+/* Button */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+  
+button:hover {
+    background-color: #2980b9;
+}
+  
+/* Responsive */
+@media (max-width: 600px) {
+    form {
+      padding: 20px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+}
+  

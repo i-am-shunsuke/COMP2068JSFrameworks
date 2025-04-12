@@ -21,11 +21,15 @@ const AuthenticationMiddleware = require("../extensions/authentication");
 // Path relative to the one configured in app.js > /projects
 // GET /projects/
 router.get("/", async (req, res, next) => {
+    if(!req.isAuthenticated()){
+        return res.redirect("/login");
+    }
+        
   // retrieve ALL data, and sort by dueDate
   let projects = await Project.find().sort([["day", "descending"]]);
   // render view
   res.render("projects/index", {
-    title: "Project Tracker",
+    title: "Calories List",
     dataset: projects,
     user: req.user,
   });
@@ -62,13 +66,15 @@ router.get("/delete/:_id", AuthenticationMiddleware, async (req, res, next) => {
   res.redirect("/projects");
 });
 
+
+
 // GET /projects/edit/_id
 router.get("/edit/:_id", AuthenticationMiddleware, async (req, res, next) => {
   let projectId = req.params._id;
   let projectData = await Project.findById(projectId);
 //   let courseList = await Course.find().sort([["name", "ascending"]]);
   res.render("projects/edit", {
-    title: "Edit Project Info",
+    title: "Edit Calory Info",
     project: projectData,
     user: req.user,
   });

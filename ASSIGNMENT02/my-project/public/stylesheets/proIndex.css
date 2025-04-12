@@ -1,0 +1,67 @@
+.proIndexTitle{
+    margin: 20px 0;
+    text-align: center;
+}
+thead {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  th, td {
+    border-right: 1px solid black;
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  a.btn {
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 8px;
+    display: inline-block;
+  }
+  
+  .btn-primary {
+    background-color: #2980b9;
+    color: white;
+  }
+  
+  .btn-danger {
+    background-color: #e74c3c;
+    color: white;
+  }
+
+  a[href="/projects/add"] {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  a[href="/projects/add"]:hover {
+    background-color: #219150;
+  }
+
+  @media (max-width: 600px) {
+    th, td {
+      padding: 10px;
+    }
+  
+    a.btn {
+      margin-bottom: 6px;
+      display: block;
+    }
+  
+    a[href="/projects/add"] {
+      width: 100%;
+      text-align: center;
+    }
+  }
