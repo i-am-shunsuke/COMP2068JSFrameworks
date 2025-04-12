@@ -89,15 +89,5 @@ router.post("/register", (req, res, next) => {
       }
   );
 
-// Display all items (read-only)
-// router.get('/public-items', async (req, res) => {
-//     try {
-//         const items = await Item.find();
-//         res.render('public-items', { items });
-//     } catch (err) {
-//         console.error(err);
-//         res.status(500).send('Server Error');
-//     }
-// });
 
 module.exports = router;
